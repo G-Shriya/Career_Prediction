@@ -1,0 +1,392 @@
+<html>
+    <head>
+	<title>Student Questionnaire</title>
+    <style>
+body {
+  background-image: url('static/quest.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  height:50px;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+h2 {
+    color: #000080;
+  }
+.container {
+  background-color: ;
+  width:900px;
+}
+.container label{
+  font-size: 20px;
+}
+.containerb1 {
+  border: 12px solid #B22222;
+  padding: 20px;
+  border-radius: 250px;
+  background-image: url("static/acamain.jpg");
+  background-repeat: no-repeat;
+  background-size: 1000px 900px;
+  width:900px;   
+}
+.containerb2 {
+  border: 12px solid #B22222;
+  padding: 20px;
+  border-radius: 250px;
+  background-image: url("static/testmain.jpg");
+  background-repeat: no-repeat;
+  background-size: 1000px 2100px;
+  width:900px;   
+}
+.containerb3 {
+  border: 12px solid #B22222;
+  padding: 20px;
+  border-radius: 250px;
+  background-image: url("static/ratemain.jpg");
+  background-repeat: no-repeat;
+  background-size: 1000px 1500px;
+  width:900px;   
+}
+.containerb4 {
+  border: 12px solid #B22222;
+  padding: 20px;
+  border-radius: 250px;
+  background-image: url("static/sitmain.jpg");
+  background-repeat: no-repeat;
+  background-size: 1000px 1500px;
+  width:900px;   
+}
+</style>
+    </head>
+    <body>
+        <div class="topnav">
+	  <a class="active" href="/">Home Page</a>
+	  <a href="/thank">Thank you</a>
+	</div>  
+        <br>
+        <center>
+        <h1> STUDENT CAREER PREDICTION QUESTIONNAIRE </h1><br>
+      
+        <form method="POST", action="{{url_for('home')}}">
+<div class="containerb1">
+<h1>This section includes questions about your Academics:</h1>
+<div class="container">
+  <h2>What is your Academic percentage in Mathematics subject ?</h2>
+  <label>
+    <input type="radio" name="a1" value="3"/><b>>=85
+  </label>
+  <label>
+    <input type="radio" name="a1" value="2"/><85 and >=70
+  </label>
+  <label>
+    <input type="radio" name="a1" value="1"/><70 and >=50
+  </label>
+  <label>
+    <input type="radio" name="a1" value="0"/><50
+  </label>
+</div>
+<br><br><br>
+<div class="container">
+  <h2>What is your Academic percentage in Biology subject ?</h2>
+  <label>
+    <input type="radio" name="a2" value="3"/>>=85
+  </label>
+  <label>
+    <input type="radio" name="a2" value="2"/><85 and >=70
+  </label>
+  <label>
+    <input type="radio" name="a2" value="1"/><70 and >=50
+  </label>
+  <label>
+    <input type="radio" name="a2" value="0"/><50
+  </label>
+</div>
+<br><br><br>
+<div class="container">
+  <h2>What is your Academic percentage in Economics subject ?</h2>
+  <label>
+    <input type="radio" name="a3" value="3"/>>=85
+  </label>
+  <label>
+    <input type="radio" name="a3" value="2"/><85 and >=70
+  </label>
+  <label>
+    <input type="radio" name="a3" value="1"/><70 and >=50
+  </label>
+  <label>
+    <input type="radio" name="a3" value="0"/><50
+  </label>
+</div>
+<br><br><br>
+<div class="container">
+  <h2>What is your Academic percentage in Social Studies subject ?</h2>
+  <label>
+    <input type="radio" name="a4" value="3"/>>=85
+  </label>
+  <label>
+    <input type="radio" name="a4" value="2"/><85 and >=70
+  </label>
+  <label>
+    <input type="radio" name="a4" value="1"/><70 and >=50
+  </label>
+  <label>
+    <input type="radio" name="a4" value="0"/><50
+  </label>
+<br><br>
+</div>
+</div>
+<br><br><br><br><br><br><br>
+<div class="containerb2">
+<h1>Let's test your knowledge and other skills:</h1>
+<div class="container">
+ <br><br><br>
+  <h2>Choose correct option which replaces the question mark to satisfy a pattern:  </h2><br>
+<img width=500 height=500 src='static/fig1.png'><br><br>
+  <label>
+    <input type="radio" name="a7" value="2"/>A
+  </label>
+  <label>
+    <input type="radio" name="a7" value="0"/>E
+  </label>
+  <label>
+    <input type="radio" name="a7" value="1"/>F
+  </label>
+</div>
+<br><br><br>
+<div class="container">
+  <h2>The letters of the word "SOCIETY" are placed at random in a row. The probability of getting a vowel in first place is </h2>
+  <label>
+    <input type="radio" name="a13" value="2"/>1/7
+  </label>
+  <label>
+    <input type="radio" name="a13" value="0"/>1/3
+  </label>
+  <label>
+    <input type="radio" name="a13" value="1"/>3/7
+  </label>
+</div>
+<br><br><br>
+<div class="container">
+  <h2>What is the percentage of loss incurred by the company in year 2002, with respect to year 1997</h2>
+<br>
+<img width=500 height=500 src='static/fig2.png'><br>
+  <label>
+   <br>
+    <input type="radio" name="a41" value="0"/>16.67
+    	<input type="radio" name="a41" value="1"/>22.35
+    	<input type="radio" name="a41" value="2"/>47.10
+	<input type="radio" name="a41" value="3"/>66.67
+	<input type="radio" name="a41" value="4"/>83.33
+  </label>
+</div><br><br><br>
+<div class="container">
+  <h2>Who invented the first vaccine ?</h2>
+  <label>
+ <br>
+    <input type="radio" name="a26" value="0"/>Edward Jenner
+
+    	<input type="radio" name="a26" value="1"/>Alexander Fleming
+
+    	<input type="radio" name="a26" value="2"/>Louis Pasteur
+
+	<input type="radio" name="a26" value="3"/>Irving Millman
+
+	<input type="radio" name="a26" value="4"/>Daniel Hale Williams
+  </label>
+</div>
+<br><br><br><br><br><br><br><br>
+</div>
+<br><br><br><br><br><br>
+<div class="containerb3">
+<h1>Let's dig in your interests...</h1>
+<div class="container">
+  <h2>Rate your interest in Business(economics, finance and marketing)</h2>
+  <label>
+    <input type="radio" name="a11" value="2"/>Low
+  </label>
+  <label>
+    <input type="radio" name="a11" value="0"/>Average
+  </label>
+  <label>
+    <input type="radio" name="a11" value="1"/>Good
+  </label>
+</div>
+<br><br><br>
+<div class="container">
+  <h2>Rate your interest in Medical field(biology and health care)</h2>
+  <label>
+    <input type="radio" name="a14" value="2"/>Low
+  </label>
+  <label>
+    <input type="radio" name="a14" value="0"/>Average
+  </label>
+  <label>
+    <input type="radio" name="a14" value="1"/>Good
+  </label>
+</div>
+<br><br><br>
+<div class="container">
+  <h2>How comfortable are you with taking risks ?</h2>
+  <label>
+    Very comfortable<input type="radio" name="a44" value="0"/>
+    	<input type="radio" name="a44" value="1"/>
+    	<input type="radio" name="a44" value="2"/>
+	<input type="radio" name="a44" value="3"/>
+	<input type="radio" name="a44" value="4"/>Never take risks
+  </label>
+</div>
+<br><br><br>
+<div class="container">
+  <h2>Rate your interest in Art (Fashion, drawing, sketching)</h2>
+  <label>
+    <input type="radio" name="a15" value="2"/>Low
+  </label>
+  <label>
+    <input type="radio" name="a15" value="0"/>Average
+  </label>
+  <label>
+    <input type="radio" name="a15" value="1"/>Good
+  </label>
+</div>
+<br><br><br>
+
+<div class="container">
+  <h2>Rate your interest in enforcing federal, state, and local laws.</h2>
+  <label>
+   <---like&nbsp&nbspneutral&nbsp&nbspdislike---><br>
+    Like<input type="radio" name="a391" value="0"/>
+    	<input type="radio" name="a391" value="1"/>
+    	<input type="radio" name="a391" value="2"/>
+	<input type="radio" name="a391" value="3"/>
+	<input type="radio" name="a391" value="4"/>Dislike
+  </label>
+</div>
+<br><br><br>
+<div class="container">
+  <h2>Rate your interest in designing a greeting card</h2>
+  <label>
+   <---like&nbsp&nbspneutral&nbsp&nbspdislike---><br>
+    Like<input type="radio" name="a27" value="0"/>
+    	<input type="radio" name="a27" value="1"/>
+    	<input type="radio" name="a27" value="2"/>
+	<input type="radio" name="a27" value="3"/>
+	<input type="radio" name="a27" value="4"/>Dislike
+  </label>
+</div>
+<br><br><br>
+<div class="container">
+  <h2>Which classes in school, do you find more interesting ?</h2>
+  <label>
+        <input type="radio" name="a47" value="3"/>Art-and-Languages
+    	<input type="radio" name="a47" value="2"/>Social-Studies
+    	<input type="radio" name="a47" value="0"/>Economics-Law
+	<input type="radio" name="a47" value="1"/>Sciences
+  </label>
+</div>
+<br><br><br>
+<div class="container">
+  <h2>How do you rate yourself as leader ?</h2>
+  <label>
+    Great leader<input type="radio" name="a43" value="0"/>
+    	<input type="radio" name="a43" value="1"/>
+    	<input type="radio" name="a43" value="2"/>
+	<input type="radio" name="a43" value="3"/>
+	<input type="radio" name="a43" value="4"/>Poor leader
+  </label>
+</div>
+<br><br><br>
+<div class="container">
+  <h2>Rate yourself in persuading others to your point of view</h2>
+  <label>
+   <br>
+    Easily Persuade<input type="radio" name="a29" value="0"/>
+    	<input type="radio" name="a29" value="1"/>
+    	<input type="radio" name="a29" value="2"/>
+	<input type="radio" name="a29" value="3"/>
+	<input type="radio" name="a29" value="4"/>Find difficulty in persuading
+  </label>
+</div>
+<br><br><br><br><br>
+</div>
+<br><br><br><br><br><br><br>
+<div class="containerb4"><br><br><br>
+<p font-color="pink"><h1>Put yourself in these following situations and choose the option which you feel is right to do.</h1></p>
+<div class="container">
+  <h2>You are given a take home exam with instructions not to use your notes,<br>textbook or any other outside sources while completing the exam.<br> You are having difficulty figuring out the answer to a couple of problems.<br> Your roommate is in the class as well, and you discuss the topic with her, but don’t discuss specific questions.<br>Choose the option which you feel is correct</h2>
+  <br>
+  <label>
+    <input type="radio" name="a16" value="0"/>Your roommate is responsible for cheating because she started the conversation about the exam. You are not responsible.
+  </label>
+  <br>
+  <label>
+    <input type="radio" name="a16" value="1"/>You and your roommate are responsible for cheating for collaborating with another person without authorization.
+  </label>
+</div>
+<br><br><br><br><br><br>
+<div class="container">
+  <h2>Suppose, you take a decision and it turns out to be wrong. Will you try to prove that your decision is correct or accept that you are wrong. </h2>
+  <label>
+   <br>
+    More likely to prove my decision correct<input type="radio" name="a42" value="0"/>
+    	<input type="radio" name="a42" value="1"/>
+    	<input type="radio" name="a42" value="2"/>
+	<input type="radio" name="a42" value="3"/>
+	<input type="radio" name="a42" value="4"/>More likely to accept my fault
+  </label>
+</div>
+<br><br><br><br><br><br>
+<div class="container">
+  <h2>Suppose, you are in undercover operation and you receive threats to stop your work, as a police officer, will you stop your work ?</h2>
+  <label>
+   <---No&nbsp&nbspneutral&nbsp&nbspYes---><br>
+    No <input type="radio" name="a31" value="0"/>
+    	<input type="radio" name="a31" value="1"/>
+    	<input type="radio" name="a31" value="2"/>
+	<input type="radio" name="a31" value="3"/>
+	<input type="radio" name="a31" value="4"/> Yes
+  </label>
+</div>
+<br><br><br><br><br><br>
+<div class="container">
+  <h2>Do friends and family members come to you for help in choosing an outfit </h2>
+  <label>
+   <---Agree&nbsp&nbspneutral&nbsp&nbspDisagree---><br>
+    Agree<input type="radio" name="a21" value="0"/>
+    	<input type="radio" name="a21" value="1"/>
+    	<input type="radio" name="a21" value="2"/>
+	<input type="radio" name="a21" value="3"/>
+	<input type="radio" name="a21" value="4"/>Disagree
+  </label>
+  <br><br>
+</div>
+</div>
+<br><br><br>
+
+	<input type="submit" style="height:50px; width:200px; background-color: #FFFFC0 " value='Predict suitable career option!'>
+</form>
+       
+    </center>
+<br><br><br><br><br><br>
+    </body>
+</html>

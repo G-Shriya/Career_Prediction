@@ -1,0 +1,100 @@
+<html>
+<head>
+<style>
+body {
+  background-image: url('static/abs.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+.topnav {
+  overflow: hidden;
+  background-color:#660066;
+  height:50px;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.container{
+  background-color: white;
+  width:900px
+}
+</style>
+</head>
+<body>
+<div class="topnav">
+	  <a class="active" href="/">Home Page</a>
+	  <a href="/thank">Thank you</a>
+	</div>
+    <center>
+	<br><br><br><br>
+        <h2>   Thank You for Filling Up the Form </h2>
+	<br><h3>Your Suitable Career would be</h3><br>
+    
+    {%if data == 3%}
+    <h1>Engineer</h1>
+    <img src="static\engg.jpg">  
+    {%elif data == 0%}
+    <h1>Businessperson</h1>
+    <img src="static\buss.jpg">
+    {%elif data == 1%}
+    <h1>Chartered accountant</h1>
+    <img src="static\ca.png">
+    {%elif data == 4%}
+    <h1>Fashion Designer</h1>
+    <img src="static\fd.jpg">
+    {%elif data == 5%}
+    <h1>Lawyer</h1>
+    <img src="static\law.jpg">
+    {%elif data == 6%}
+    <h1>Police</h1>
+    <img src="static\pol.jpg">
+    {%elif data == 2%}
+    <h1>Doctor</h1>
+    <img src="static\doc.jpg">
+    {%else%}
+    <h1>Engineer</h1>
+    <img src="static\engg.jpg">
+    
+    {%endif%}
+
+        <br><br><br><br><br><br>
+    <h3>Please click the button for availing the guidance we provide with respect to the Career option predicted for you!!</h3>
+    {%if data == 3%}
+    <a href="/enggmain"><button style="height:50px; width:200px; background-color:lightblue">Click to move to the Guidance Pages</button></a>
+    {%elif data == 0%}
+    <a href="/bussmain"><button style="height:50px; width:200px; background-color:lightblue">Click to move to the Guidance Pages</button></a>
+    {%elif data == 1%}
+    <a href="/CAmain"><button style="height:50px; width:200px; background-color:lightblue">Click to move to the Guidance Pages</button></a>
+    {%elif data == 4%}
+    <a href="/fashionmain"><button style="height:50px; width:200px; background-color:lightblue">Click to move to the Guidance Pages</button></a>
+    {%elif data == 5%}
+    <a href="/lawmain"><button style="height:50px; width:200px; background-color:lightblue">Click to move to the Guidance Pages</button></a>    
+    {%elif data == 6%}
+    <a href="/policemain"><button style="height:50px; width:200px; background-color:lightblue">Click to move to the Guidance Pages</button></a>
+    {%elif data == 2%}
+    <a href="/docmain"><button style="height:50px; width:200px; background-color:lightblue">Click to move to the Guidance Pages</button></a>
+    {%else%}
+    <a href="/enggmain"><button style="height:50px; width:200px; background-color:lightblue">Click to move to the Guidance Pages</button></a>
+    
+    {%endif%}
+    </center>
+
+</body>
+
+</html>
